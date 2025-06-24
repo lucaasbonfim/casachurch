@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Church Global</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+    />
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'Noto Sans', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white font-sans">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black border-b border-gray-800 px-6 md:px-10 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <img src="img/nome.png" alt="Logo" width="130" height="130" />
+      </div>
+
+      <div class="flex gap-6 items-center">
+        <nav class="hidden md:flex gap-6">
+          <a href="#" class="text-sm font-medium text-gray-400 hover:text-white transition">Início</a>
+          <a href="#" class="text-sm font-medium text-gray-400 hover:text-white transition">Sobre Nós</a>
+          <a href="#" class="text-sm font-medium text-gray-400 hover:text-white transition">Eventos</a>
+          <a href="#" class="text-sm font-medium text-gray-400 hover:text-white transition">Contato</a>
+        </nav>
+        <button class="hidden md:block h-10 px-4 rounded-lg bg-gray-400 text-sm font-bold text-black hover:bg-gray-500 transition">Doar</button>
+        <button id="menuToggle" class="md:hidden text-gray-400 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+      </div>
+    </header>
+    <div id="mobileMenu" class="hidden md:hidden fixed top-[58px] left-0 right-0 bg-black border-t border-gray-800 p-6 z-40 flex flex-col gap-4">
+      <a href="#" class="text-sm font-medium text-gray-400 hover:text-white transition">Início</a>
+      <a href="#" class="text-sm font-medium text-gray-400 hover:text-white transition">Sobre Nós</a>
+      <a href="#" class="text-sm font-medium text-gray-400 hover:text-white transition">Eventos</a>
+      <a href="#" class="text-sm font-medium text-gray-400 hover:text-white transition">Contato</a>
+      <button class="h-10 px-4 rounded-lg bg-gray-400 text-sm font-bold text-black hover:bg-gray-500 transition">Doar</button>
+    </div>
+
+    <main class="pt-6 mt-6">
+      <!-- Seção Hero (fundo branco com imagem centralizada) -->
+      <section class="bg-white text-black">
+        <div class="mx-auto max-w-5xl px-4 py-20 flex flex-col items-center text-center">
+          <div class="w-full h-[480px] rounded-lg bg-cover bg-center flex flex-col items-center justify-center gap-4 px-6"
+            style="background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCrsCLb3B6A-vLa-HNZmY0MvAatSTGb1C4vQkckcjUaZUwmksyj_SXiqyIHg_bN3sYHq1iCiV_eGhQrIwLeppVeKFpMSYUP2gzLWNK6B3ESAth7TnfJ6oGRvfPODxt3BJGRpKqvGOYAs9YbaWR2GHxI2o2z456mrToMs-xNMBFkit2hUnfhIfmdNi2uOg54LSE0coTolGLWGyXZsJh4PYK4cvv_xOLYWMYTREU7wavjkY3YEMXSO564QVgKihkbEegZ0f0iEfL9c6Px');">
+            <h1 class="text-4xl md:text-5xl font-black leading-tight tracking-tight">Bem-vindo à Casa Church Global!</h1>
+            <p class="text-base md:text-lg max-w-xl">
+              Uma comunidade vibrante dedicada à fé, comunhão e serviço. Junte-se a nós enquanto exploramos os ensinamentos de Cristo e buscamos causar um impacto positivo no mundo.
+            </p>
+            <button class="h-12 px-5 rounded-lg bg-gray-700 text-white font-bold hover:bg-gray-900 transition">
+              Junte-se a Nós
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Eventos (fundo preto) -->
+      <section class="bg-black text-white">
+        <div class="mx-auto max-w-7xl px-4 py-20">
+          <h2 class="text-2xl font-bold mb-6 text-center">Próximos Eventos</h2>
+          <div class="flex flex-wrap justify-center gap-6">
+            <article class="w-80 bg-[#1a1a1a] rounded-lg p-4 flex flex-col gap-2">
+              <div class="aspect-video bg-cover bg-center rounded-lg"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBejOZZmic4OFMGusoNKbHrVpaRNUV0gN7gs2Mtj84ZOfwv6IJpvahBlaJQfdnM6eFP6p8njkaOdaGQh_HeDNvnyX0jlwxDRsfFTJ0Immhy5UNJGfKOOvi3ScJrzhwY9th0pRAEGtY3L6TYDe3_dBFx98y5UQwrz25XlpM81ycOrQ8mOHKQvFvTnafTG3Imef9X8lRRDcIimjSrdLn2AKpJs58VMB2lVHnH_hhu41mQm_7ZYOTeRM44iGAupXb6VFFlp-62NW0jicC3');"></div>
+              <h3 class="text-lg font-medium">Culto de Domingo</h3>
+              <p class="text-sm text-gray-400">Participe conosco todo domingo para um culto edificante.</p>
+            </article>
+            <article class="w-80 bg-[#1a1a1a] rounded-lg p-4 flex flex-col gap-2">
+              <div class="aspect-video bg-cover bg-center rounded-lg"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCsi-3p2gtgDEmmPGph9Pn3l26B_NuODbnvKZHVH0W0FJDI52pYPlpfu-xdQnbs2As-0Jm--5pCbalUnFQJ2JvMiHaXnZ4FIiiuht22Laf1R4uuJLUlxAGxDIuNubGY_WST-_IX-Yxiu3q0YiHtHGheX8Od6X3MEqFkugvEsF2Nvcp5cIh8J9yg7hN_6OCZG-TIRRFikI90KGeKfxDSOTNapOX4-I4DlC-qRJTR-VZMnqBvKRpzWz1QtyQwqBKxMY6AqnFwfUU7ONqL');"></div>
+              <h3 class="text-lg font-medium">Ação Comunitária</h3>
+              <p class="text-sm text-gray-400">Participe dos nossos programas de ação comunitária.</p>
+            </article>
+            <article class="w-80 bg-[#1a1a1a] rounded-lg p-4 flex flex-col gap-2">
+              <div class="aspect-video bg-cover bg-center rounded-lg"
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBu9xIHKFRBROgjHKNJm9dU9c69zFmAmfhD1gl5kIoMFfMiAphw9cxWKwFd2e1R4diW_dFlx0YSGv_135FLnuDZ50Sy_NrtiLd3ydSMinCXoW3IWcUt4uU_fb1_ynqVPe8F0y9dSyx4VToTOHH6suxj84u3zjvOe4D9gHBGj1RXeY2XsBbezITEwzh-INltYQbym27tk2FED4r1kGxlYm1qcqrAWG1bYO7NxRsprke0jlF-TbsaI-o4yQBTb-BAmRKiMXwz97vLnXYG');"></div>
+              <h3 class="text-lg font-medium">Grupo de Jovens</h3>
+              <p class="text-sm text-gray-400">Participe do nosso grupo de jovens para diversão e aprendizado.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção Explore Mais (fundo branco) -->
+      <section class="bg-white text-black">
+        <div class="mx-auto max-w-5xl px-4 py-20">
+          <h2 class="text-2xl font-bold mb-6 text-center">Explore Mais</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="rounded-xl border border-gray-200 p-6 shadow-sm">
+              <h3 class="text-lg font-bold mb-2">Nossa Comunidade</h3>
+              <p class="text-sm text-gray-600">Descubra a comunidade diversa e acolhedora da Casa Church Global.</p>
+            </div>
+            <div class="rounded-xl border border-gray-200 p-6 shadow-sm">
+              <h3 class="text-lg font-bold mb-2">Nossa História</h3>
+              <p class="text-sm text-gray-600">Conheça a jornada e as conquistas da nossa igreja.</p>
+            </div>
+            <div class="rounded-xl border border-gray-200 p-6 shadow-sm">
+              <h3 class="text-lg font-bold mb-2">Contato</h3>
+              <p class="text-sm text-gray-600">Encontre nossas informações de contato e fale conosco.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black text-white py-10 px-4 text-center">
+      <div class="flex justify-center pb-6">
+        <img src="img/logo.png" width="80" height="80">
+      </div>
+      <div class="flex flex-wrap justify-center gap-6 mb-4">
+        <a href="#" class="text-gray-400 hover:text-white transition">Política de Privacidade</a>
+        <a href="#" class="text-gray-400 hover:text-white transition">Termos de Serviço</a>
+      </div>
+      <p class="text-sm text-gray-500">©2025 Casa Church Global. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+      document.getElementById('menuToggle').addEventListener('click', () => {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
