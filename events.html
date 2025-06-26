@@ -31,12 +31,12 @@
   <body class="bg-black text-white font-sans">
     <header class="fixed top-0 left-0 right-0 z-50 bg-black border-b border-gray-800 px-6 md:px-10 py-3 flex items-center justify-between">
       <div class="flex items-center gap-4">
-        <img src="img/nome.png" alt="Logo" width="130" height="130" />
+        <img href="index.html"  src="img/nome.png" alt="Logo" width="130" height="130" />
       </div>
 
       <div class="flex gap-6 items-center">
         <nav class="hidden md:flex gap-6">
-          <a href="about.html" class="text-sm font-medium text-gray-400 hover:text-white transition">Início</a>
+          <a href="index.html" class="text-sm font-medium text-gray-400 hover:text-white transition">Início</a>
           <a href="about.html" class="text-sm font-medium text-gray-400 hover:text-white transition">Sobre Nós</a>
           <a href="about.html" class="text-sm font-medium text-gray-400 hover:text-white transition">Conteúdo</a>
           <a href="events.html" class="text-sm font-medium text-gray-400 hover:text-white transition">Eventos</a>
@@ -52,7 +52,7 @@
       </div>
     </header>
     <div id="mobileMenu" class="hidden md:hidden fixed top-[58px] left-0 right-0 bg-black border-t border-gray-800 p-6 z-40 flex flex-col gap-4">
-      <a href="#" class="text-sm font-medium text-gray-400 hover:text-white transition">Início</a>
+      <a href="index.html" class="text-sm font-medium text-gray-400 hover:text-white transition">Início</a>
       <a href="about.html" class="text-sm font-medium text-gray-400 hover:text-white transition">Sobre Nós</a>
       <a href="about.html" class="text-sm font-medium text-gray-400 hover:text-white transition">Conteúdo</a>
       <a href="events.html" class="text-sm font-medium text-gray-400 hover:text-white transition">Eventos</a>
@@ -62,68 +62,88 @@
 
     <main class="pt-6 mt-6">
       <!-- Seção Hero (fundo branco com imagem centralizada) -->
-      <section class="bg-white text-black">
-        <div class="mx-auto max-w-5xl px-4 py-20 flex flex-col items-center text-center">
-          <div class="w-full h-[480px] rounded-lg bg-cover bg-center flex flex-col items-center justify-center gap-4 px-6"
-            style="background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCrsCLb3B6A-vLa-HNZmY0MvAatSTGb1C4vQkckcjUaZUwmksyj_SXiqyIHg_bN3sYHq1iCiV_eGhQrIwLeppVeKFpMSYUP2gzLWNK6B3ESAth7TnfJ6oGRvfPODxt3BJGRpKqvGOYAs9YbaWR2GHxI2o2z456mrToMs-xNMBFkit2hUnfhIfmdNi2uOg54LSE0coTolGLWGyXZsJh4PYK4cvv_xOLYWMYTREU7wavjkY3YEMXSO564QVgKihkbEegZ0f0iEfL9c6Px');">
-            <h1 class="text-4xl md:text-5xl font-black leading-tight tracking-tight">Bem-vindo à Casa Church Global!</h1>
-            <p class="text-base md:text-lg max-w-xl">
-              Uma comunidade vibrante dedicada à fé, comunhão e serviço. Junte-se a nós enquanto exploramos os ensinamentos de Cristo e buscamos causar um impacto positivo no mundo.
-            </p>
-            <button class="h-12 px-5 rounded-lg bg-gray-700 text-white font-bold hover:bg-gray-900 transition">
-              Junte-se a Nós
-            </button>
-          </div>
+        <section class="bg-black text-white">
+        <div class="px-4 py-5 max-w-screen-xl mx-auto">
+            <div class="layout-content-container flex flex-col max-w-[960px] w-full">
+            <div class="flex flex-col md:flex-row justify-between gap-3 p-4">
+                <div class="flex flex-col gap-3">
+                <p class="text-white tracking-light text-[32px] font-bold leading-tight">Eventos</p>
+                <p class="text-[#93adc8] text-sm font-normal leading-normal">
+                    Join us for our upcoming events and services.
+                </p>
+                </div>
+            </div>
+            </div>
         </div>
-      </section>
+        </section>
+
 
       <!-- Seção Eventos (fundo preto) -->
-      <section class="bg-black text-white">
-        <div class="mx-auto max-w-7xl px-4 py-20">
-          <h2 class="text-2xl font-bold mb-6 text-center">Próximos Eventos</h2>
-          <div class="flex flex-wrap justify-center gap-6">
-            <article class="w-80 bg-[#1a1a1a] rounded-lg p-4 flex flex-col gap-2">
-              <div class="aspect-video bg-cover bg-center rounded-lg"
-                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBejOZZmic4OFMGusoNKbHrVpaRNUV0gN7gs2Mtj84ZOfwv6IJpvahBlaJQfdnM6eFP6p8njkaOdaGQh_HeDNvnyX0jlwxDRsfFTJ0Immhy5UNJGfKOOvi3ScJrzhwY9th0pRAEGtY3L6TYDe3_dBFx98y5UQwrz25XlpM81ycOrQ8mOHKQvFvTnafTG3Imef9X8lRRDcIimjSrdLn2AKpJs58VMB2lVHnH_hhu41mQm_7ZYOTeRM44iGAupXb6VFFlp-62NW0jicC3');"></div>
-              <h3 class="text-lg font-medium">Culto de Domingo</h3>
-              <p class="text-sm text-gray-400">Participe conosco todo domingo para um culto edificante.</p>
-            </article>
-            <article class="w-80 bg-[#1a1a1a] rounded-lg p-4 flex flex-col gap-2">
-              <div class="aspect-video bg-cover bg-center rounded-lg"
-                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCsi-3p2gtgDEmmPGph9Pn3l26B_NuODbnvKZHVH0W0FJDI52pYPlpfu-xdQnbs2As-0Jm--5pCbalUnFQJ2JvMiHaXnZ4FIiiuht22Laf1R4uuJLUlxAGxDIuNubGY_WST-_IX-Yxiu3q0YiHtHGheX8Od6X3MEqFkugvEsF2Nvcp5cIh8J9yg7hN_6OCZG-TIRRFikI90KGeKfxDSOTNapOX4-I4DlC-qRJTR-VZMnqBvKRpzWz1QtyQwqBKxMY6AqnFwfUU7ONqL');"></div>
-              <h3 class="text-lg font-medium">Ação Comunitária</h3>
-              <p class="text-sm text-gray-400">Participe dos nossos programas de ação comunitária.</p>
-            </article>
-            <article class="w-80 bg-[#1a1a1a] rounded-lg p-4 flex flex-col gap-2">
-              <div class="aspect-video bg-cover bg-center rounded-lg"
-                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBu9xIHKFRBROgjHKNJm9dU9c69zFmAmfhD1gl5kIoMFfMiAphw9cxWKwFd2e1R4diW_dFlx0YSGv_135FLnuDZ50Sy_NrtiLd3ydSMinCXoW3IWcUt4uU_fb1_ynqVPe8F0y9dSyx4VToTOHH6suxj84u3zjvOe4D9gHBGj1RXeY2XsBbezITEwzh-INltYQbym27tk2FED4r1kGxlYm1qcqrAWG1bYO7NxRsprke0jlF-TbsaI-o4yQBTb-BAmRKiMXwz97vLnXYG');"></div>
-              <h3 class="text-lg font-medium">Grupo de Jovens</h3>
-              <p class="text-sm text-gray-400">Participe do nosso grupo de jovens para diversão e aprendizado.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+<!-- ... (todo o conteúdo acima permanece igual até a primeira seção de eventos) -->
 
-      <!-- Seção Explore Mais (fundo branco) -->
-      <section class="bg-white text-black">
-        <div class="mx-auto max-w-5xl px-4 py-20">
-          <h2 class="text-2xl font-bold mb-6 text-center">Explore Mais</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <div class="rounded-xl border border-gray-200 p-6 shadow-sm">
-              <h3 class="text-lg font-bold mb-2">Nossa Comunidade</h3>
-              <p class="text-sm text-gray-600">Descubra a comunidade diversa e acolhedora da Casa Church Global.</p>
+    <!-- Seção Eventos (fundo preto) -->
+    <section class="bg-black text-white">
+    <div class="p-4 max-w-screen-xl mx-auto flex flex-col gap-10">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 bg-black text-white">
+
+        <!-- Evento 1 -->
+        <div class="flex flex-col md:flex-row items-center gap-6 bg-black rounded-lg">
+            <div class="w-full md:w-[280px] aspect-video rounded-lg bg-cover bg-center shrink-0"
+            style="background-image: url('img/culto.png')"></div>
+            <div class="flex flex-col max-w-md">
+            <p class="text-[#93adc8] text-sm font-normal">20 de Outubro de 2024</p>
+            <p class="text-white text-base font-bold leading-tight">Culto de Domingo</p>
+            <p class="text-[#93adc8] text-sm">
+                Participe do nosso culto dominical às 10h. Um momento de louvor, comunhão e palavra edificante.
+            </p>
+            <button class="mt-3 flex h-8 px-4 rounded-lg bg-[#243647] text-white text-sm font-medium w-fit items-center">Saiba mais</button>
             </div>
-            <div class="rounded-xl border border-gray-200 p-6 shadow-sm">
-              <h3 class="text-lg font-bold mb-2">Nossa História</h3>
-              <p class="text-sm text-gray-600">Conheça a jornada e as conquistas da nossa igreja.</p>
-            </div>
-            <div class="rounded-xl border border-gray-200 p-6 shadow-sm">
-              <h3 class="text-lg font-bold mb-2">Contato</h3>
-              <p class="text-sm text-gray-600">Encontre nossas informações de contato e fale conosco.</p>
-            </div>
-          </div>
         </div>
-      </section>
+
+        <!-- Evento 2 -->
+        <div class="flex flex-col md:flex-row items-center gap-6 bg-black rounded-lg">
+            <div class="w-full md:w-[280px] aspect-video rounded-lg bg-cover bg-center shrink-0"
+            style="background-image: url('img/domingo.png')"></div>
+            <div class="flex flex-col max-w-md">
+            <p class="text-[#93adc8] text-sm font-normal">28 de Outubro de 2024</p>
+            <p class="text-white text-base font-bold leading-tight">Noite de Louvor</p>
+            <p class="text-[#93adc8] text-sm">
+                Uma noite especial com muita música, adoração e celebração da nossa fé. Começa às 19h30.
+            </p>
+            <button class="mt-3 flex h-8 px-4 rounded-lg bg-[#243647] text-white text-sm font-medium w-fit items-center">Saiba mais</button>
+            </div>
+        </div>
+
+        <!-- Evento 3 -->
+        <div class="flex flex-col md:flex-row items-center gap-6 bg-black rounded-lg">
+            <div class="w-full md:w-[280px] aspect-video rounded-lg bg-cover bg-center shrink-0"
+            style="background-image: url('img/jovens.png')"></div>
+            <div class="flex flex-col max-w-md">
+            <p class="text-[#93adc8] text-sm font-normal">03 de Novembro de 2024</p>
+            <p class="text-white text-base font-bold leading-tight">Encontro de Jovens</p>
+            <p class="text-[#93adc8] text-sm">
+                Um encontro especial para jovens, com dinâmicas, louvor e uma palavra impactante. A partir das 16h.
+            </p>
+            <button class="mt-3 flex h-8 px-4 rounded-lg bg-[#243647] text-white text-sm font-medium w-fit items-center">Saiba mais</button>
+            </div>
+        </div>
+
+        <!-- Evento 4 -->
+        <div class="flex flex-col md:flex-row items-center gap-6 bg-black rounded-lg">
+            <div class="w-full md:w-[280px] aspect-video rounded-lg bg-cover bg-center shrink-0"
+            style="background-image: url('img/familias.png')"></div>
+            <div class="flex flex-col max-w-md">
+            <p class="text-[#93adc8] text-sm font-normal">10 de Novembro de 2024</p>
+            <p class="text-white text-base font-bold leading-tight">Encontro de Famílias</p>
+            <p class="text-[#93adc8] text-sm">
+                Um evento dedicado às famílias da igreja com atividades, reflexões e comunhão. Das 9h às 13h.
+            </p>
+            <button class="mt-3 flex h-8 px-4 rounded-lg bg-[#243647] text-white text-sm font-medium w-fit items-center">Saiba mais</button>
+            </div>
+        </div>
+
+        </div>
     </main>
 
     <footer class="bg-black text-white py-10 px-4 text-center">
